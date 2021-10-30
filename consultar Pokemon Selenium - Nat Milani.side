@@ -1,0 +1,242 @@
+{
+  "id": "c6df8976-3b87-4f51-b5d5-a7ea56abd324",
+  "version": "2.0",
+  "name": "Pokemon Selenium",
+  "url": "https://www.pokemon.com/br/pokedex/",
+  "tests": [{
+    "id": "849a0af5-4996-4554-8ac2-12ba490d0c6e",
+    "name": "Untitled",
+    "commands": [{
+      "id": "721ffe60-f0e2-4b17-9cf8-dec88f9dfddd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.pokemon.com/br/pokedex/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "278c9014-5814-4065-8b9c-9c8b2e8dddaa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "874db37e-82db-4669-a27b-ce39aab7b9c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e87549b-b7ad-40ab-8646-fb89101d4b61",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "bulbasaur"
+    }, {
+      "id": "5f1231a3-f518-415f-ab1f-19d375611b20",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=.filter-text-search > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "541b3bb4-78b1-427e-b006-9c9b690ec1b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=figure img",
+      "targets": [
+        ["css=figure img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png')]", "xpath:img"],
+        ["xpath=//figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a61e13d-4dd4-43eb-8ba5-6362b51c619b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.column-7:nth-child(1) li:nth-child(1) > .attribute-value",
+      "targets": [
+        ["css=.column-7:nth-child(1) li:nth-child(1) > .attribute-value", "css:finder"],
+        ["xpath=//li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'0.7 m')]", "xpath:innerText"]
+      ],
+      "value": "0.7 m"
+    }, {
+      "id": "ea94884c-b31a-4dc8-881c-2b13e79508bc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.push-7 > ul > li > .attribute-value",
+      "targets": [
+        ["css=.push-7 > ul > li > .attribute-value", "css:finder"],
+        ["xpath=//div[2]/ul/li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Seed')]", "xpath:innerText"]
+      ],
+      "value": "Seed"
+    }, {
+      "id": "6356df6c-a631-4b3d-b096-f3f7d16c79b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.middle img",
+      "targets": [
+        ["css=.middle img", "css:finder"],
+        ["xpath=//img[@alt='Ivysaur']", "xpath:img"],
+        ["xpath=//section[4]/div/ul/li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dca73f16-bf49-4f54-90fa-d3b2c52a8985",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.column-7:nth-child(1) li:nth-child(1) > .attribute-value",
+      "targets": [
+        ["css=.column-7:nth-child(1) li:nth-child(1) > .attribute-value", "css:finder"],
+        ["xpath=//li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'1.0 m')]", "xpath:innerText"]
+      ],
+      "value": "1.0 m"
+    }, {
+      "id": "b0573398-1bf8-4be3-9417-3972ea9b0df2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.last img",
+      "targets": [
+        ["css=.last img", "css:finder"],
+        ["xpath=//img[@alt='Venusaur']", "xpath:img"],
+        ["xpath=//ul/li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7890ce38-9f80-42df-8cdb-8c1f1eed5fb7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active > .column-7:nth-child(1) li:nth-child(1) > .attribute-value",
+      "targets": [
+        ["css=.active > .column-7:nth-child(1) li:nth-child(1) > .attribute-value", "css:finder"],
+        ["xpath=//li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'2.0 m')]", "xpath:innerText"]
+      ],
+      "value": "2.0 m"
+    }, {
+      "id": "b70c4b90-c17b-4538-81e5-9bbbeec0c9df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Explorar mais Pokémon",
+      "targets": [
+        ["linkText=Explorar mais Pokémon", "linkText"],
+        ["css=.content-block-half > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Explorar mais Pokémon')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/br/pokedex/')])[25]", "xpath:href"],
+        ["xpath=//section[5]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Explorar mais Pokémon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "008cad55-413a-42ed-8790-e65d8f17376d",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e0bfc6-5271-4ede-a13f-9cf4f9763893",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "abra"
+    }, {
+      "id": "3e77ced2-9fb6-407c-a01e-8cc5d05f0248",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=.filter-text-search > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9f7aee1-e3ad-4391-9e31-0fff0e509788",
+      "comment": "",
+      "command": "click",
+      "target": "css=.animating:nth-child(1) img",
+      "targets": [
+        ["css=.animating:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/063.png')]", "xpath:img"],
+        ["xpath=//figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9afd190f-349f-4d95-a727-0ad746fa4624",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.column-7:nth-child(1) li:nth-child(1) > .attribute-value",
+      "targets": [
+        ["css=.column-7:nth-child(1) li:nth-child(1) > .attribute-value", "css:finder"],
+        ["xpath=//li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'0.9 m')]", "xpath:innerText"]
+      ],
+      "value": "0.9 m"
+    }, {
+      "id": "cfa7f29f-0788-4106-af4b-85e14e4dff4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.middle img",
+      "targets": [
+        ["css=.middle img", "css:finder"],
+        ["xpath=//img[@alt='Kadabra']", "xpath:img"],
+        ["xpath=//section[4]/div/ul/li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5104fc2-4b0f-4c5c-b0a9-fae0886e78f5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.version-x:nth-child(2)",
+      "targets": [
+        ["css=.version-x:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow.')]", "xpath:innerText"]
+      ],
+      "value": "Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow."
+    }]
+  }],
+  "suites": [{
+    "id": "633f0ae7-9128-45eb-90a4-d289fb0be476",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["849a0af5-4996-4554-8ac2-12ba490d0c6e"]
+  }],
+  "urls": ["https://www.pokemon.com/", "https://www.pokemon.com/br/pokedex/"],
+  "plugins": []
+}
